@@ -1,0 +1,72 @@
+footer.footer {
+  background: var(--black-color);
+  padding: 120px 0 40px 0;
+  position: relative;
+}
+
+footer.footer .halfcircleshape-icon {
+  position: absolute;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  animation-delay: 0s;
+  animation-name: zoom-out;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  -o-animation-timing-function: initial;
+  left: 0;
+}
+
+footer.footer .halfcircleshape-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes zoom-out {
+  0% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 1;
+    width: 340px;
+    height: 340px;
+  }
+}
+
+footer.footer h1.footer-heading {
+  text-align: center;
+  color: var(--white-color);
+  margin: 0;
+}
+
+footer.footer p.footer-email {
+  text-align: center;
+  font-size: 30px;
+  color: var(--white-color);
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+/* FOOTER BOTTOM SECTION DESIGN CSS CODE :::::::::::::::::::::::::: */
+
+footer.footer .footer-bottom {
+  border-top: 1px solid var(--white-color);
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer.footer .footer-bottom p {
+  color: var(--white-color);
+}
+
+footer.footer .footer-bottom ul.footer-links {
+  display: flex;
+  column-gap: 40px;
+}
+
+footer.footer .footer-bottom ul.footer-links li a {
+  color: var(--white-color);
+}

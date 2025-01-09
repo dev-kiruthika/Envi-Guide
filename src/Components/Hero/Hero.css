@@ -1,0 +1,62 @@
+.hero-section {
+  padding: 220px 0 110px 0;
+  position: relative;
+}
+
+.hero-section .halfcircleshape-icon {
+  position: absolute;
+  bottom: -2px;
+  transform: rotate(-90deg);
+  width: 0px;
+  height: 0px;
+  animation-delay: 0s;
+  animation-name: zoom-in;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  -o-animation-timing-function: initial;
+  left: 0;
+}
+
+.hero-section .halfcircleshape-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-90deg) ;
+    opacity: 1;
+    width: 340px;
+    height: 340px;
+  }
+}
+
+.hero-section h3 {
+  width: 80%;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+}
+
+.hero-section p.subtitle {
+  text-align: right;
+  color: var(--black-color);
+  padding-top: 30px;
+}
+
+.hero-section .bannerScrolldown-outer {
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.hero-section img.bannerScrolldown-icon {
+  object-fit: contain;
+  height: 70px;
+}

@@ -1,0 +1,26 @@
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--black-color);
+  z-index: 9;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo img.logo-image {
+    mix-blend-mode: darken;
+}
+
+header .container ul.nav-list {
+  display: flex;
+  column-gap: 40px;
+}
+
+header .container ul.nav-list li a{
+    color: var(--black-color);
+}

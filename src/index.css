@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "maxinesansbold";
+  src: url("./assets/fonts/maxinesansbold.eot");
+  src: url("./assets/fonts/maxinesansbold.eot") format("embedded-opentype"),
+    url("./assets/fonts/maxinesansbold.woff2") format("woff2"),
+    url("./assets/fonts/maxinesansbold.woff") format("woff"),
+    url("./assets/fonts/maxinesansbold.ttf") format("truetype"),
+    url("./assets/fonts/maxinesansbold.svg#maxinesansbold") format("svg");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+
+:root {
+  /* Colors */
+  --green-color: #9afb00;
+  --white-color: #fff;
+  --grey-color: #999999;
+  --black-color: #000;
+  --para-color: #555555;
+  --light-grey-color: #ECECEC;
+
+  /* fonts */
+  --font-family-maxinesansbold: "maxinesansbold";
+  --font-family-Teko: "Teko", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none !important;
+  list-style: none;
+}
+
+body {
+  font-family: var(--font-family-maxinesansbold);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--para-color);
+  max-width: 100%;
+  overflow-x: hidden !important;
+  background: var(--white) !important;
+}
+
+/* ::: CONTAINER-CSS ::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* == CONTAINER-CSS ::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* == SELECTION-CSS ==
+===============================================================*/
+
+::-moz-selection {
+  background: var(--light-grey-color);
+  color: var(--black-color);
+}
+
+::-webkit-selection {
+  background: var(--light-grey-color);
+  color: var(--black-color);
+}
+
+::selection {
+  background: var(--light-grey-color);
+  color: var(--black-color);
+}
+
+/* == SELECTION-CSS ==
+===============================================================*/
+
+/* == TYPOGRAPHY-CSS == 
+===============================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 40px 0 20px;
+}
+
+h1 {
+  font-family: var(--font-family-Teko);
+  font-weight: 600;
+  font-size: 120px;
+  color: var(--black-color);
+  line-height: 120px;
+}
+
+h2 {
+  font-family: var(--font-family-Teko);
+  font-weight: 600;
+  font-size: 80px;
+  color: var(--black-color);
+  line-height: 80px;
+}
+
+h2 strong {
+  font-family: var(--font-Nunito);
+  color: var(--grey-color);
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--font-family-Teko);
+  font-weight: 500;
+  font-size: 70px;
+  color: var(--black-color);
+  line-height: 65px;
+}
+
+h4 {
+  font-family: var(--font-family-Teko);
+  font-weight: 500;
+  font-size: 45px;
+  color: var(--black-color);
+  line-height: 40px;
+}
+
+h5 {
+  font-family: var(--font-family-Teko);
+  font-weight: 500;
+  font-size: 35px;
+  color: var(--black-color);
+  line-height: 30px;
+}
+
+h6 {
+  font-family: var(--font-family-Teko);
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--black-color);
+  line-height: 28px;
+}
+
+p,
+ul li,
+ol li {
+  font-family: var(--font-family-maxinesansbold);
+  font-size: 18px;
+  color: var(--para-color);
+  line-height: 26px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button.common-button {
+  background: transparent;
+  border: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 550;
+  padding: 0 10px 10px 0;
+  border-bottom: 1px solid var(--black-color);
+  display: flex;
+  column-gap: 14px;
+  cursor: pointer;
+}
